@@ -7,6 +7,11 @@ namespace RentalKendaraan_20180140085.Models
 {
     public partial class Gender
     {
+        public Gender()
+        {
+            Customer = new HashSet<Customer>();
+        }
+
         public int IdGender { get; set; }
 
         [Required(ErrorMessage = "Nama Gender tidak boleh kosong!!")]

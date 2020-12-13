@@ -67,7 +67,7 @@ namespace RentalKendaraan_20180140085.Models
                     .IsUnicode(false);
 
                 entity.HasOne(d => d.IdGenderNavigation)
-                    .WithOne(p => p.Customer)
+                    .WithMany(p => p.Customer)
                     .HasForeignKey(d => d.IdGender)
                     .HasConstraintName("FK_Customer_Gender");
             });

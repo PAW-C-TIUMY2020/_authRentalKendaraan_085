@@ -35,7 +35,7 @@ namespace RentalKendaraan_20180140085.Models
 
         [DisplayName("Gender")]
         [Required(ErrorMessage = "Id Gender tidak boleh kosong")]
-        public int IdGender { get; set; }
+        public int? IdGender { get; set; }
 
         [DisplayName("Gender")]
         public Gender IdGenderNavigation { get; set; }
